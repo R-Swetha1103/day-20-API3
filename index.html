@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metropolitan Museum Collection</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <style>
+    body {
+        height: 100%;
+        background-image: url("museum.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card {
+        background-image: url("museum1.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+    .card-title {
+        font-weight: bold;
+    }
+    .artwork {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid white;
+        padding-bottom: 1rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center" style="color: white;">Metropolitan Museum Collection</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Artwork Information</h5>
+                <button id="fetch-data" class="btn btn-primary mt-3">Fetch Collection Data</button>
+                <div id="collection-info" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
